@@ -103,7 +103,9 @@ export class CEmbed extends MessageEmbed {
                 }
             }
         } catch(e) {
-            this.addField(`:exclamation: **${e.message}**`, "\u200b")
+            // Just display nothing if summary fails.
+            // More likely user was deleted
+            // this.addField(`:exclamation: **${e.message}**`, "\u200b")
         }
     }
 
