@@ -1,3 +1,8 @@
+// Copyright (c) 2021 Olivier Ragheb
+// Copyright (c) 2021 The Scriv Network developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 import { Message } from 'discord.js'
 import { CUser } from './user/user.class'
 import { CStore } from "./store/store.class"
@@ -6,8 +11,6 @@ import {RefreshCommand} from "./commands/refresh.command";
 
 export class CBot {
     private store = new CStore()
-
-
 
     public async listen(): Promise<string> {
         this.store.discord.on('message', (m: Message) => {

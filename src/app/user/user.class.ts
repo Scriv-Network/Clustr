@@ -1,3 +1,8 @@
+// Copyright (c) 2021 Olivier Ragheb
+// Copyright (c) 2021 The Scriv Network developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 import { CStore } from '../store/store.class';
 import {TDBUser, TDBAccount, TDBAddress, TDBStatus} from '../db/db.types';
 

@@ -1,7 +1,11 @@
+// Copyright (c) 2021 Olivier Ragheb
+// Copyright (c) 2021 The Scriv Network developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 import {CStore} from "../store/store.class";
-import {TDBCoin, TDBStatus, TDBUser} from "../db/db.types";
+import {TDBStatus, TDBUser} from "../db/db.types";
 import {TConfigCoin, TConfigEligibility} from "../config/config.type";
-import {Collection, Role, RoleManager} from "discord.js";
 
 export class RolesService {
     private async add (guild: string, role: string, user: string) {
