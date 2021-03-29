@@ -1,0 +1,130 @@
+{
+  "command.error": "\r\nErreur de commande. Tapez `${0}help` or `${0}help ${1}` pour obtenir de l'aide",
+  "flag": ":flag_fr:",
+  "language": "Français",
+  "yes": "Oui",
+  "no": "Non",
+
+  "command.blockchain.title": "Statut des portefeuilles en gouvernance",
+  "command.blockchain.welcome": "Liste tous les portefeuilles en gouvernance avec leur version de daemon",
+  "command.blockchain.help.short": "",
+  "command.blockchain.help.long": "Affiche le statu du portefeuille actuel. tapez `!blockchain status` ou `!blockchain status coin`",
+
+  "command.blockchain.status.bestblockhash": "Dernier: `${0}`",
+  "command.blockchain.status.blocks": "Blocks: ${0}",
+  "command.blockchain.status.coin": "${1}",
+  "command.blockchain.status.protocolversion": "Protocole: ${0}",
+  "command.blockchain.status.version": "Version: ${0}",
+  "command.blockchain.status.walletversion": "Portefeuille: ${0}",
+
+  "command.help.title": ":wave:   Bonjour!",
+  "command.help.welcome": "Je suis le bot pour la gouvernance de la communauté :robot:\r\n\nProuvez votre participation et obtenez droit de vote dans d'importantes décisions.",
+  "command.help.help.short":"`!help` - Pour voir à nouveau ce message d'aide.\r\n`!help commande` — Aide pour une commande spécifique. (Ex: `!help verify`)",
+  "command.help.help.long": "`!help` - Pour voir à nouveau ce message d'aide.\r\n`!help commande` — Aide pour une commande spécifique. (Ex: `!help verify`)",
+
+  "command.help.communities": "\r\n**J'aide les communautés suivantes actuellement**",
+  "command.help.commands": "J'accepte les commandes suivantes",
+  "command.help.coins": "Pièce",
+  "command.help.icons": "\u200b",
+  "command.help.links.doc": "[Wiki](http://www.wikipedia.org)",
+  "command.help.links.docs": "Docs",
+  "command.help.links.term": "[Termes](http://www.stackofstake.com)",
+  "command.help.links.terms": "TOS",
+  "command.help.links.communities": "Communauté",
+  "command.help.links.community": "[Joindre](http://www.discord.com)",
+  "command.help.tickers": "Ticker",
+
+  "command.language.title": "",
+  "command.language.welcome": "",
+  "command.language.help.short": "`!language` - Affiche la langue actuelle et les choix disponibles\r\n`!language xx` - Change de langue. Tapez `!help language` pour plus de détails",
+  "command.language.help.long": "\u200b\r\n`!language`\r\nAffiche votre langue courante et celles disponibles (Voir ci-dessous).\r\n\n`language xx`\r\nPermet de changer la langue courante avec l'une de celles disponibles ci-dessous\r\nTapez `!language en` ou `!language English` pour changer la langue en Anglais.\r\n\u200b",
+
+  "command.language.current": "Votre langue actuelle est ${2} **${1}**",
+  "command.language.identical": "Votré langue était déjà définie comme ${2} ${1}",
+  "command.language.updated": "Votre langue a été correctement changée en ${2}, ${1}",
+
+  "command.languages.title": "",
+  "command.languages.welcome": "",
+  "command.languages.help.short": "Liste les langues disponibles",
+  "command.languages.help.long": "Liste les langues disponibles",
+
+  "command.languages.language": "${2} ${1} [${0}]",
+  "command.languages.languages": "Liste des langues disponibles",
+
+  "command.unknown.title": "Commande inconnue",
+  "command.unknown.welcome": "",
+  "command.unknown.help.short": "HIDDEN",
+  "command.unknown.help.long": "La demande d'aide sur cette commande n'est pas disponible... Parcequ elle n'existe pas :smile:\r\nVeuillez taper `!help` pour obtenir la liste des commandes acceptées",
+
+  "command.unknown.message": "Je n'ai pas compris votre commande [${0}].\r\n\r\nTapez la commande `!help` pour voir la liste des commandes disponible ou laissez un message à la comunauté ([lien](http://www.discord.com)).",
+
+  "command.verify.title": "Vérification de gouvernance",
+  "command.verify.welcome": "Ajout d'un compte StackOfStake ou d'une adresse pour participer à la gouvernance",
+  "command.verify.help.short": "`!verify ticker adresse` -  Enregistre une adresse pour participer à la gouvernance\r\n`!verify stackofstake clé_api clé_secrète` - Enregistrement StackOfStake\r\n\u200b",
+  "command.verify.help.long": "\u200b\r\n`!verify ticker addresse`\r\n\nVérifie votre balance SCRIV sur un portefeuille privé\r\n`!verify stackofstake clé_api clé_secrète` - Vérifie vos balances StackOfStake pour les pièces gérées par ce bot \r\n\n**:alarm_clock: UTILISEZ UNE CLÉ API EN LECTURE SEULE**\r\n\u200b",
+
+  "command.verify.rpc.attempt": "Essai ${0} sur ${1}",
+  "command.verify.rpc.error.failure": ":x: L'adresse ${2} ${0} n'est pas validée",
+  "command.verify.rpc.error.invalid": "Votre réponse est incorrecte",
+  "command.verify.rpc.error.malformed": "Votre réponse n'est pas une valeur base64 valide",
+  "command.verify.rpc.error.multiple" : "Cette adresse est déjà enregistrée à de multiples reprises! Contactez le support.",
+  "command.verify.rpc.error.registered":  "Cette adresse est déjà enregistrée!",
+  "command.verify.rpc.failure": "**:exclamation: ${0} **",
+  "command.verify.rpc.retry": ":pencil: Pourriez-vous réessayer avec le message suivant s'il vous plait?\r\n\n`${0}`",
+  "command.verify.rpc.sign": ":pencil: Pourriez-vous signer le message suivant avec votre portefeuille svp?\r\n\n`${0}`",
+  "command.verify.rpc.success": ":white_check_mark: Adresse `${3}` correctement vérifiée!\r\nVotre balance est de ${1} ${2}",
+  "command.verify.rpc.test": "Test de l'adresse ${0}: `${2}`\r\n\u200b",
+  "command.verify.rpc.timeout": "Désolé mais j'ai d'autres choses à faire, vous êtes trop lent...",
+
+  "command.verify.sos.error.failure": "Votre compte SOS n'est pas validé",
+  "command.verify.sos.error.multiple" : "Cet utilisateur a déjà été enregistrée de multiples fois! Veuillez contacter le support.",
+  "command.verify.sos.error.registered":  "Vous ne pouvez avoir qu'un seul compte enregistré!",
+  "command.verify.sos.success": ":white_check_mark: **Votre compte StackOfStake a bien été validé:**\r\n${0}",
+
+  "command.status.title": "Résumé de gouvernance",
+  "command.status.welcome": "",
+  "command.status.help.short": "`!status` - Liste vos balances et leur statut de gouvernance actuel",
+  "command.status.help.long": "\u200b\r\n`!status`\r\nAffiche les balances de vos addresses enregistrées ainsi que de votre compte StackOfStake pour chaque pièce suivie par ce robot.\r\nD'autre part, elle affiche aussi, pour chacune de ces pièces, votre statut de gouvernance.\r\n\n\u200b",
+
+  "command.status.coin.address": "${0}",
+  "command.status.coin.balance": "${0}",
+  "command.status.coin.header": ":${1}: ${0} (${2})",
+  "command.status.coin.total": "**Total:**",
+
+  "command.unverify.title": "Retrait de participation à la gouvernance",
+  "command.unverify.welcome": "Supprime votre compte StackOfStake ou vos adresses privées de la gouvernance\n\u200B",
+  "command.unverify.help.short": "`!unverify` - Supprime votre compte StackOfStake et toutes vos adrresses privées\r\n`!unverify stackofstake` - Supprime votre compte StackOfStake\r\n`!unverify ticker` - Supprime toutes vos adresses\r\n`!unverify ticker addresse` - Supprime une adresse spécifique",
+  "command.unverify.help.detailed": "\u200B\n`!unverify`\r\nSupprime vos données de la base de donnée du robot:\r\n- Votre compte StackOfStake\r\n- Toutes vos adresses de portefeuille enregistrées\r\n- Toutes vos balances (et historique)\r\n\n`!unverify stackofstake`\r\nSupprime votre compte StackOfStake et garde les adresses de vos portefeuilles enregistrées et les balances associées.\r\nComme alternatives, vous pouvez utiliser `!unverify sos`, `!unverify platform`, ou `!unverify stake`.\r\n\n`!unverify ticker`\r\nSupprime vos adresses portefeuille de la base de donnée du robot.\r\nPar exemple, tapez `!unverify scriv` pour effacer toutes vos adresses scriv.\r\n\n`!unverify ticker addresse`\r\nSupprime une adresse spécifique.\r\nPar exemple, tapez `!unverify scriv sMN25Se7hPkjhxvWe5SyXo5PfD5SEjeNiQ` pour supprimer votre adresse scriv `sMN25Se7hPkjhxvWe5SyXo5PfD5SEjeNiQ` de vos adresses enregistrées.\r\n\u200b",
+
+  "command.unverify.all.cancel": "Vous choisissez bien... Vous restez avec nous! :smile:",
+  "command.unverify.all.confirm": "**Veuillez confirmer votre demande**\r\n\nEntrez OUI si vous êtes sûr de vouloir effacer votre compte",
+  "command.unverify.all.failure": "Vptre compte n'a pas été trouvé, rien n'a été éffacé.",
+  "command.unverify.all.success": ":white_check_mark: Votre compte a été effacé avec succès...",
+
+  "command.unverify.rpc.cancel": "Vous avez bien choisi... Vous restez avec nous! :smile:",
+  "command.unverify.rpc.confirm": "**Veuillez confirmer votre demande**\r\n\nEntrez OUI si vous êtes sûr de vouloir éffacer toutes vos adresses ${0}:",
+  "command.unverify.rpc.failure": "Aucune adresse ${0} trouvée, rien n'a été éffaçé.",
+  "command.unverify.rpc.success": ":white_check_mark: Toutes vos adresses ${0} ont été éffaçées avec succès...",
+
+  "command.unverify.address.cancel": "Vous avez bien choisi... Vous restez avec nous! :smile:",
+  "command.unverify.address.confirm": "**Veuillez confirmer votre demande**\r\n\nEntrez OUI si vous êtes sûr de vouloir éffacer votre adresse ${0}:\r\n`${2}`",
+  "command.unverify.address.failure": "Votre adresse ${1} `${2}` n'a pas été trouvée, rien n'a été éffacé.",
+  "command.unverify.address.success": ":white_check_mark: Votre adresse ${1} `${2}` a été éffacée avec succès...",
+
+  "command.unverify.sos.cancel": "Vous avez bien choisi... Vous restez avec nous! :smile:",
+  "command.unverify.sos.confirm": "**Veuillez confirmer votre demande**\r\n\nEntez OUI si vous êtes sûr de vouloir éffacer votre compte StackOfStake:",
+  "command.unverify.sos.failure": "Votre compte StackOfStake n'a pas été trouvé, rien n'a été éffacé.",
+  "command.unverify.sos.success": ":white_check_mark: Votre compte StackOfStake a été éffacé avec succès...",
+
+  "summary.eligible.last": "\u200B\r\n:white_check_mark: Vous êtes éligible pour la gouvernance ${0} (${2}).",
+  "summary.eligible.next": "\u200B\r\n:white_check_mark: Vous êtes éligible pour la gouvernance ${0} (${2}).\r\n\u200b\u200B${4} ${1} pour obtenir ${6}",
+  "summary.eligible.none": "\u200B\r\n:x: Vous n'êtes pas éligible pour la gouvernance ${0}.\r\n\u200b\u200BVous devez encore obtenir ${3} ${1} pour avoir ${5}",
+  "summary.eligible.empty": "\u200B\r\n:Aucun role n'est disponible pour la gouvernance ${0}.",
+  "summary.eligible.multiple": "\u200B\r\n:white_check_mark: Vous êtes éligible pour la gouvernance ${0} (${2}).",
+
+  "system.error.config.coin": "Coin ${0} [${1}] was not found in bot configuration file\nPlease contact support",
+  "system.error.message": "\r\n**:exclamation: ${0}**",
+  "system.error.title": "Une erreur système est survenue!",
+  "system.error.user.unknown": "Your Discord user has no bot record.\r\nPlease contact support",
+  "system.error.user.multiple": "Votre utilisateur discord (${0}) possède de multiples comptes Clustr.\r\nVeuillez contacter le support"
+}

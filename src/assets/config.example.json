@@ -1,0 +1,53 @@
+{
+  "name": "Clustr",
+  "bot": "BOT KEY",
+  "guild": "SERVER SNOWFLAKE",
+  "log": "LOG CHANNEL SNOWFLAKE",
+  "prefix": "!",
+  "admins": [
+    "ADMIN USER SNOWFLAKE"
+  ],
+  "languages": ["en", "fr"],
+  "coins": [
+    {
+      "prefix": "s",
+      "name": "Scriv",
+      "ticker": "SCRIV",
+      "length": 34,
+      "decimals": 8,
+      "history": true,
+      "refresh": {
+        "interval": 60000,
+        "records": 20
+      },
+      "protocol": "http",
+      "baseURL": " === RPC URL/IP ===",
+      "port": 7980,
+      "user": "=== RPC USERNAME ===",
+      "password": "=== RPC PASSWORD ===",
+      "eligibilities": [
+        { "name": "100k", "role": "=== ROLE SNOWFLAKE ===", "min": 100000 }
+      ],
+      "sos": true
+    }
+  ],
+  "sos": {
+    "history": true,
+    "protocol": "https",
+    "baseURL": "api.stackofstake.com",
+    "refresh": {
+      "interval": 300000,
+      "records": 20
+    }
+  },
+  "db": {
+    "baseURL": "=== POSTGRES URL/IP ===",
+    "database": "=== DB SCHEMA NAME ===",
+    "user": "=== DB USERNAME ===",
+    "password": "=== DB PASSWORD ===",
+    "port": 5432
+  },
+  "embed": {
+    "color": "0x00ff00"
+  }
+}
