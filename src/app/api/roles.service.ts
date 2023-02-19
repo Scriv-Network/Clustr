@@ -8,6 +8,9 @@ import {TDBStatus, TDBUser} from "../db/db.types";
 import {TConfigCoin, TConfigEligibility} from "../config/config.type";
 
 export class RolesService {
+
+    // Adds a role to a guild(server) user.
+    // Provided strings are snowflake values.
     private async add (guild: string, role: string, user: string) {
         const Guild = await this.store.discord.guilds.fetch(guild)
         if (!Guild) throw new Error('Guild does not exist: ' + guild)
@@ -21,6 +24,8 @@ export class RolesService {
         Member.roles.add(role).catch(error => console.error(error.message))
     }
 
+    // Removes a role to a guild(server) user.
+    // Provided strings are snowflake values.
     private async remove (guild: string, role: string, user: string) {
         const Guild = await this.store.discord.guilds.fetch(guild)
         if (!Guild) throw new Error('Guild does not exist: ' + guild)
@@ -34,6 +39,8 @@ export class RolesService {
         Member.roles.remove(role).catch(error => console.error(error.message))
     }
 
+    // Returns a Collection <string, Role> of roles of a specific guild(server) user
+    // Index is role snowflake
     private async current (guild: string, user: string) {
         const Guild = await this.store.discord.guilds.fetch(guild, false, true)
         if (!Guild) throw new Error('Guild does not exist: ' + guild)
@@ -44,6 +51,7 @@ export class RolesService {
         return Member.roles.cache
     }
 
+    // Creates a list, for a specified database user, with provided current coin status
     private async granted (usr: TDBUser, status: TDBStatus[]) {
         const r: TConfigCoin[] = []
 
